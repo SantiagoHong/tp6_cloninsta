@@ -1,0 +1,50 @@
+{
+    "nombre": "Juan",
+    "imagen": "juan.jpg",
+    "biografia": "Soy un apasionado de la tecnología y el desarrollo web. Me encanta aprender nuevas cosas y compartir mis conocimientos con los demás.",
+    "cantPubl": 30,
+    "cantSeguidores": 150,
+    "cantSeguidos": 100,
+    "publicacionesAso": [
+    {
+        "id": 1,
+        "descripcion": "Mi primera publicación",
+        "imagen": "imagen1.jpg",
+        "nomUsuario": "juan123",
+        "cantLikes": 5,
+        "comentarios": [
+            {
+            "id": 1,
+            "texto": "¡Me encanta esta publicación!",
+            "nomUsuario": "maria456"
+            },
+            {
+            "id": 2,
+            "texto": "¡Muy interesante!",
+            "nomUsuario": "pedro789"
+            }
+        ],
+        "fecha": "2024-06-01T12:00:00Z"
+    },
+    {
+        "id": 2,
+        "descripcion": "Mi segunda publicación",
+        "imagen": "imagen2.jpg",
+        "nomUsuario": "maria456",
+            "cantLikes": 10,
+            "comentarios": [
+                {
+                    "id": 1,
+                    "texto": "¡Me encanta esta publicación!",
+                    "nomUsuario": "juan123"
+                },
+                {
+                    "id": 2,
+                    "texto": "¡Muy interesante!",
+                    "nomUsuario": "pedro789"
+                }
+            ],
+        "fecha": "2024-06-02T12:00:00Z"
+    }
+  ]
+}
