@@ -5,6 +5,23 @@
     "cantPubl": 30,
     "cantSeguidores": 150,
     "cantSeguidos": 100,
+    "HistoriasAso": [
+        {
+            "id": 1,
+            "nomUsuario": "juan123",
+            "imagen": "historia1.jpg"
+        },
+        {
+            "id": 2,
+            "nomUsuario": "maria456",
+            "imagen": "historia2.jpg"
+        },
+        {
+            "id": 3,
+            "nomUsuario": "pedro789",
+            "imagen": "historia3.jpg"
+        }
+    ],
     "publicacionesAso": [
     {
         "id": 1,
@@ -45,6 +62,167 @@
                 }
             ],
         "fecha": "2024-06-02T12:00:00Z"
+    },
+    {
+        "id": 3,
+        "descripcion": "Mi tercera publicación",
+        "imagen": "",
+        "nomUsuario": "pedro789",
+            "cantLikes": 15,
+            "comentarios": [
+                {
+                    "id": 1,
+                    "texto": "¡Me encanta esta publicación!",
+                    "nomUsuario": "juan123"
+                },
+                {
+                    "id": 2,
+                    "texto": "¡Muy interesante!",
+                    "nomUsuario": "maria456"
+                }
+            ],
+        "fecha": "2024-06-03T12:00:00Z"
+    }
+    ,
+    {
+        "id": 4,
+        "descripcion": "Mi cuarta publicación",
+        "imagen": "",
+        "nomUsuario": "juan123",
+            "cantLikes": 20,
+            "comentarios": [
+                {
+                    "id": 1,
+                    "texto": "¡Me encanta esta publicación!",
+                    "nomUsuario": "maria456"
+                },
+                {
+                    "id": 2,
+                    "texto": "¡Muy interesante!",
+                    "nomUsuario": "pedro789"
+                }
+            ],
+        "fecha": "2024-06-04T12:00:00Z"
+    },
+    {
+        "id": 5,
+        "descripcion": "Mi quinta publicación",
+        "imagen": "",
+        "nomUsuario": "maria456",
+            "cantLikes": 25,
+            "comentarios": [
+                {
+                    "id": 1,
+                    "texto": "¡Me encanta esta publicación!",
+                    "nomUsuario": "juan123"
+                },
+                {
+                    "id": 2,
+                    "texto": "¡Muy interesante!",
+                    "nomUsuario": "pedro789"
+                }
+            ],
+        "fecha": "2024-06-05T12:00:00Z"
+    },
+    {
+        "id": 6,
+        "descripcion": "Mi sexta publicación",
+        "imagen": "",
+        "nomUsuario": "pedro789",
+            "cantLikes": 30,
+            "comentarios": [
+                {
+                    "id": 1,
+                    "texto": "¡Me encanta esta publicación!",
+                    "nomUsuario": "juan123"
+                },
+                {
+                    "id": 2,
+                    "texto": "¡Muy interesante!",
+                    "nomUsuario": "maria456"
+                }
+            ],
+        "fecha": "2024-06-06T12:00:00Z"
+    },
+    {
+        "id": 7,
+        "descripcion": "Mi séptima publicación",
+        "imagen": "",
+        "nomUsuario": "juan123",
+            "cantLikes": 35,
+            "comentarios": [
+                {
+                    "id": 1,
+                    "texto": "¡Me encanta esta publicación!",
+                    "nomUsuario": "maria456"
+                },
+                {
+                    "id": 2,
+                    "texto": "¡Muy interesante!",
+                    "nomUsuario": "pedro789"
+                }
+            ],
+        "fecha": "2024-06-07T12:00:00Z"
+    },
+    {
+        "id": 8,
+        "descripcion": "Mi octava publicación",
+        "imagen": "",
+        "nomUsuario": "maria456",
+            "cantLikes": 40,
+            "comentarios": [
+                {
+                    "id": 1,
+                    "texto": "¡Me encanta esta publicación!",
+                    "nomUsuario": "juan123"
+                },
+                {
+                    "id": 2,
+                    "texto": "¡Muy interesante!",
+                    "nomUsuario": "pedro789"
+                }
+            ],
+        "fecha": "2024-06-08T12:00:00Z"
+    },
+    {
+        "id": 9,
+        "descripcion": "Mi novena publicación",
+        "imagen": "",
+        "nomUsuario": "pedro789",
+            "cantLikes": 45,
+            "comentarios": [
+                {
+                    "id": 1,
+                    "texto": "¡Me encanta esta publicación!",
+                    "nomUsuario": "juan123"
+                },
+                {
+                    "id": 2,
+                    "texto": "¡Muy interesante!",
+                    "nomUsuario": "maria456"
+                }
+            ],
+        "fecha": "2024-06-09T12:00:00Z"
+    },
+    {
+        "id": 10,
+        "descripcion": "Mi décima publicación",
+        "imagen": "",
+        "nomUsuario": "juan123",
+            "cantLikes": 50,
+            "comentarios": [
+                {
+                    "id": 1,
+                    "texto": "¡Me encanta esta publicación!",
+                    "nomUsuario": "maria456"
+                },
+                {
+                    "id": 2,
+                    "texto": "¡Matate!",
+                    "nomUsuario": "pedro789"
+                }
+            ],
+        "fecha": "2024-06-10T12:00:00Z"
     }
   ]
 }

@@ -6,12 +6,14 @@ function Feed({ publicaciones, publicacion, setPublicacion }: { publicaciones: P
 
   return (
     <div>
+      <h1>TRENDING</h1>
+      
       {publicacion == null ? (
         publicaciones.map((pub) => (
           <Publicaciones key={pub.id} publicacion={pub} setPublicacion={setPublicacion} />
         ))
       ) : (
-        <PublicacionDetalle publicacion={publicacion} />
+        <PublicacionDetalle publicacion={publicacion} setPublicacion={setPublicacion} />
       )}
     </div>
   )

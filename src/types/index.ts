@@ -5,7 +5,14 @@ export interface Usuario {
     cantPubl: number;
     cantSeguidores: number;
     cantSeguidos: number;
+    historiasAso: Historia[];
     publicacionesAso: Publicacion[];
+   
+}
+export interface Historia {
+    id: number;
+    nomUsuario: string;
+    imagen: string;
 }
 
 export interface Publicacion {

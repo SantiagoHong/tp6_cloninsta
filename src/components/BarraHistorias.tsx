@@ -1,9 +1,10 @@
 import Historias from "./Historias"
 
-function BarraHistorias() {
+function BarraHistorias({ historia, setHistoria }: { historia: any, setHistoria: any }) {
 
   return (
     <>
+        
         <Historias />
     </>
   )
