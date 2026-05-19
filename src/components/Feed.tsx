@@ -1,12 +1,20 @@
+import type { Publicacion } from '../types'
+import PublicacionDetalle from './PublicacionDetalle'
 import Publicaciones from './Publicaciones'
 
-function feed() {
+function Feed({ publicaciones, publicacion, setPublicacion }: { publicaciones: Publicacion[], publicacion: Publicacion, setPublicacion: any }) {
 
   return (
-    <>
-        <Publicaciones />
-    </>
+    <div>
+      {publicacion == null ? (
+        publicaciones.map((pub) => (
+          <Publicaciones key={pub.id} publicacion={pub} setPublicacion={setPublicacion} />
+        ))
+      ) : (
+        <PublicacionDetalle publicacion={publicacion} />
+      )}
+    </div>
   )
 }
 
-export default feed
+export default Feed

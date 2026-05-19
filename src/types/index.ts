@@ -6,7 +6,6 @@ export interface Usuario {
     cantSeguidores: number;
     cantSeguidos: number;
     publicacionesAso: Publicacion[];
-
 }
 
 export interface Publicacion {

@@ -9,7 +9,7 @@
     {
         "id": 1,
         "descripcion": "Mi primera publicación",
-        "imagen": "imagen1.jpg",
+        "imagen": "",
         "nomUsuario": "juan123",
         "cantLikes": 5,
         "comentarios": [
@@ -29,7 +29,7 @@
     {
         "id": 2,
         "descripcion": "Mi segunda publicación",
-        "imagen": "imagen2.jpg",
+        "imagen": "",
         "nomUsuario": "maria456",
             "cantLikes": 10,
             "comentarios": [

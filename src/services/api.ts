@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-    baseURL: 'ttps://api.thecatapi.com/v1/images',
+    baseURL: 'https://api.thecatapi.com/v1/images',
 })
 
 export default api
