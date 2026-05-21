@@ -1,11 +1,13 @@
+import type { Historia } from "../types"
 import Historias from "./Historias"
 
-function BarraHistorias({ historia, setHistoria }: { historia: any, setHistoria: any }) {
+function BarraHistorias({ historias }: { historias: Historia[] }) {
 
   return (
     <>
-        
-        <Historias />
+        {historias.map((historia: Historia) => (
+            <Historias key={historia.id} historia={historia} />
+        ))}
     </>
   )
 }

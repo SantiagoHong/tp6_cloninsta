@@ -5,20 +5,24 @@ import BarraLateral from './components/BarraLateral'
 import Feed from './components/Feed'
 import usuario from './data/usuario.json'
 import './App.css'
-import type { Publicacion, Usuario } from './types'
+import type { Historia, Publicacion, Usuario } from './types'
 import api from './services/api'
+import Loader from './components/Loader'
 
 function App() {
-  const [publicaciones, setPublicaciones] = useState([])
+  const [publicaciones, setPublicaciones] = useState<Publicacion[]>([])
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
-  const [publicacion, setPublicacion] = useState(null)
+  const [publicacion, setPublicacion] = useState<Publicacion | null>(null)
   const [perfil, setPerfil] = useState<Usuario | null>(null)  
-  const [Historia, setHistoria] = useState([])
+  const [perfilCargado, setPerfilCargado] = useState(false)
+  const [historias, setHistorias] = useState([])
 
   async function ponerImagen():Promise<string> {
-      const response = await api.get(`search?api_key=live_72bnRN72Nfz8O4DIvi9YPoWBx8P9SeFIxg8DaohRjLhfwD2KvKLdlo1R18OfBt4U`)
-      return response.data[0].url;
+    setLoading(true)
+    const response = await api.get(`search?api_key=live_72bnRN72Nfz8O4DIvi9YPoWBx8P9SeFIxg8DaohRjLhfwD2KvKLdlo1R18OfBt4U`)
+    setLoading(false)
+    return response.data[0].url;
   }
 
   useEffect(() => {  
@@ -47,6 +51,16 @@ function App() {
         }
         setPublicaciones((prev) => [...prev, pub]);
       }
+      for (let k = 0; k < usuario.historiasAso.length; k++) {
+        const imagen = await ponerImagen();
+
+        const his: Historia = {
+          id: usuario.historiasAso[k].id,
+          nomUsuario: usuario.historiasAso[k].nomUsuario,
+          imagen: imagen
+        }
+        setHistorias((prev) => [...prev, his]);
+      }
 
       const p: Usuario = {
         nombre: usuario.nombre,
@@ -55,7 +69,8 @@ function App() {
         cantPubl: usuario.cantPubl,
         cantSeguidores: usuario.cantSeguidores,
         cantSeguidos: usuario.cantSeguidos,
-        publicacionesAso: usuario.publicacionesAso
+        historiasAso: historias,
+        publicacionesAso: publicaciones
       }
       setPerfil(p)
       
@@ -64,12 +79,23 @@ function App() {
     cargarDatos()
   }, [])
 
+
+
   return (
     <>
       <Encabezado />
-      <BarraHistorias historia = {Historia}  setHistoria={setHistoria} />
-      <BarraLateral />
-      <Feed publicaciones={publicaciones} publicacion={publicacion} setPublicacion={setPublicacion} />
+      <BarraLateral perfil={perfil} setPerfilCargado={setPerfilCargado} />
+      {loading ? (
+        <Loader />
+      ) : (
+        <BarraHistorias historias={historias} />
+      )}
+
+      {loading ? (
+        <Loader />
+      ) : (
+        <Feed publicaciones={publicaciones} publicacion={publicacion} setPublicacion={setPublicacion} setPerfilCargado={setPerfilCargado} perfilCargado={perfilCargado} perfil={perfil} setLoading={setLoading} />
+      )}
     </>
   )
 }

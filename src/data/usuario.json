@@ -1,26 +1,61 @@
 {
     "nombre": "Juan",
-    "imagen": "juan.jpg",
+    "imagen": "Juan.jpg",
     "biografia": "Soy un apasionado de la tecnología y el desarrollo web. Me encanta aprender nuevas cosas y compartir mis conocimientos con los demás.",
     "cantPubl": 30,
     "cantSeguidores": 150,
     "cantSeguidos": 100,
-    "HistoriasAso": [
-        {
-            "id": 1,
-            "nomUsuario": "juan123",
-            "imagen": "historia1.jpg"
-        },
-        {
-            "id": 2,
-            "nomUsuario": "maria456",
-            "imagen": "historia2.jpg"
-        },
-        {
-            "id": 3,
-            "nomUsuario": "pedro789",
-            "imagen": "historia3.jpg"
-        }
+    "historiasAso": [
+    {
+        "id": 1,
+        "nomUsuario": "juan123",
+        "imagen": ""
+    },
+    {
+        "id": 2,
+        "nomUsuario": "maria456",
+        "imagen": ""
+    },
+    {
+        "id": 3,
+        "nomUsuario": "pedro789",
+        "imagen": ""
+    },
+    {
+        "id": 4,
+        "nomUsuario": "juan123",
+        "imagen": ""
+    },
+    {
+        "id": 5,
+        "nomUsuario": "maria456",
+        "imagen": ""
+    },
+    {
+        "id": 6,
+        "nomUsuario": "pedro789",
+        "imagen": ""
+    },
+    {
+        "id": 7,
+        "nomUsuario": "juan123",
+        "imagen": ""
+    },
+    {
+        "id": 8,
+        "nomUsuario": "maria456",
+        "imagen": ""
+    },
+    {
+        "id": 9,
+        "nomUsuario": "pedro789",
+        "imagen": ""
+    },
+    {
+        "id": 10,
+        "nomUsuario": "juan123",
+        "imagen": ""
+    }
     ],
     "publicacionesAso": [
     {
