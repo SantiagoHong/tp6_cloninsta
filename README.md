@@ -71,3 +71,26 @@ export default defineConfig([
   },
 ])
 ```
+
+- Cómo organizaron el proyecto.
+Primero nos fijamos que componentes necesitabamos y los creamos. Después decidimos primero programar todo los componentes uno por uno según que era lo más importante, comenzando por el feed. Como el feed necesitaba de publicacion, programamos eso primero. Después el mostrarPerfil y publicacion detalle lo dejamos para el final, ya que no inlfuia directamente con lo que se ve al iniciar el proyecto.
+- Qué componentes crearon.
+BarraHistorias, BarraLateral, Comentario, ComentarioList, Encabezado, Feed, Historias, Loader, Opciones, Perfil, PerfilDetalle, PublicacionDetalle y Publicaciones.
+- Qué responsabilidad tiene cada componente.
+tienen la responsabilidad de 
+- Por qué decidieron componentizar de esa manera.
+me gustó
+- Cómo se comunican los componentes mediante props.
+comunicandose
+- Qué hooks utilizaron y para qué.
+useState y UseEffect.
+- Qué diseño de Figma utilizaron como referencia.
+https://www.figma.com/community/file/1004033523744290376
+- Cómo resolvieron la visualización individual de publicaciones.
+Es un componente aparte que reemplaza el feed entero mostrando solo una publicaión.
+-  Cómo simularon el perfil de usuario logueado.
+Utilizamos un archivo json con todos los datos ya preestablecidos, ese archivo lo importamos al app.tsx y desde ahí al crear los objetos, introducimos los valores del json al objeto.
+-  Qué datos decidieron mostrar en el perfil.
+Foto de perfil, nombre, cantidad de seguidores y cantidad de seguidos
+-  Qué estados utilizaron para seleccionar publicaciones o manejar la vista individual.
+Utilizamos el setPublicación y verificabamos si es que publicación tenía algún valor.
