@@ -12,7 +12,6 @@ import Loader from './components/Loader'
 function App() {
   const [publicaciones, setPublicaciones] = useState<Publicacion[]>([])
   const [loading, setLoading] = useState(false)
-  const [error, setError] = useState(null)
   const [publicacion, setPublicacion] = useState<Publicacion | null>(null)
   const [perfil, setPerfil] = useState<Usuario | null>(null)  
   const [perfilCargado, setPerfilCargado] = useState(false)
@@ -39,6 +38,7 @@ function App() {
         }
 
         const imagen = await ponerImagen();
+        
 
         const pub: Publicacion = {
           id: usuario.publicacionesAso[i].id,
@@ -82,21 +82,21 @@ function App() {
 
 
   return (
-    <>
-      <Encabezado />
+    <div className="app-container">
       <BarraLateral perfil={perfil} setPerfilCargado={setPerfilCargado} />
-      {loading ? (
-        <Loader />
-      ) : (
-        <BarraHistorias historias={historias} />
-      )}
+      <div className="contenido-principal">
+        <Encabezado />
 
-      {loading ? (
-        <Loader />
-      ) : (
-        <Feed publicaciones={publicaciones} publicacion={publicacion} setPublicacion={setPublicacion} setPerfilCargado={setPerfilCargado} perfilCargado={perfilCargado} perfil={perfil} setLoading={setLoading} />
-      )}
-    </>
+        {loading ? (
+          <Loader />
+        ) : (
+          <>
+            <BarraHistorias historias={historias} />
+            <Feed publicaciones={publicaciones} publicacion={publicacion} setPublicacion={setPublicacion} setPerfilCargado={setPerfilCargado} perfilCargado={perfilCargado} perfil={perfil} />
+          </>
+        )}
+      </div>
+    </div>
   )
 }
 

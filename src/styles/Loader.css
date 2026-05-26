@@ -1,0 +1,6 @@
+.loader{
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  margin: 50px auto;
+}

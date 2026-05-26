@@ -1,0 +1,42 @@
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.encabezado form {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 20%;
+}
+
+.encabezado input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--bg-search);
+  color: white;
+  outline: none;
+}
+
+.encabezado img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.encabezado div {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #f43f5e, #db2777);
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.encabezado div h2 {
+  font-size: 1rem;
+  margin: 0 0 0 10px;
+}

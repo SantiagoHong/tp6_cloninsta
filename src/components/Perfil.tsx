@@ -1,4 +1,6 @@
 import type { Usuario } from "../types"
+import Juan from '../../assets/Juan.jpg'
+import '../styles/Perfil.css'
 
 function Perfil({ perfil, setPerfilCargado }: { perfil: Usuario | null, setPerfilCargado: any }) {
   if (!perfil) {
@@ -11,7 +13,7 @@ function Perfil({ perfil, setPerfilCargado }: { perfil: Usuario | null, setPerfi
 
   return (
     <div className="perfil" onClick={() => detallarPerfil()}>
-      <img src={`.../assets/images/${perfil.imagen}`} alt={perfil.nombre} />
+      <img src={Juan} alt={perfil.nombre} />
       <h2>{perfil.nombre}</h2>
       <p>{perfil.cantSeguidores} seguidores</p>
       <p>{perfil.cantSeguidos} seguidos</p>

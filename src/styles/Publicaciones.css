@@ -1,0 +1,31 @@
+.publicacion-card {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.publicacion-card img {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.publicacion-card:hover img {
+  transform: scale(1.02);
+}
+
+.publicacion-card p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 20px 15px 15px 15px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  font-size: 0.9rem;
+  font-weight: bold;
+}

@@ -1,0 +1,31 @@
+.PerfilDetalle {
+  border: 3px solid grey;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+.pfp{
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  text-decoration: underline;
+}
+
+button {
+  background-color: var(--bg-search);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover { background-color: var(--accent-pink); }
+
+img { max-width: 100%; border-radius: 15px; }

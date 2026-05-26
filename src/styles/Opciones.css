@@ -1,0 +1,32 @@
+.opciones {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  width: 100%;
+}
+
+.opciones li {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  cursor: pointer;
+  color: var(--text-muted);
+  transition: 0.3s;
+}
+
+.opciones li:hover {
+  background-color: rgba(255,255,255,0.05);
+  color: var(--text-main);
+}
+
+.opciones li:first-child {
+  background-color: #1a1c2d;
+  color: var(--text-main);
+  border-left: 4px solid var(--accent-pink);
+}
+
+.opciones li p {
+  margin: 0 0 0 15px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}

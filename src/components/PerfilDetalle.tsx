@@ -1,4 +1,6 @@
 import type { Usuario } from '../types'
+import '../styles/PerfilDetalle.css'
+import Juan from '../../assets/Juan.jpg'
 
 function PerfilDetalle({ perfil, setPerfilCargado }: { perfil: Usuario | null, setPerfilCargado: any }) {
   if (!perfil) {
@@ -9,14 +11,20 @@ function PerfilDetalle({ perfil, setPerfilCargado }: { perfil: Usuario | null, s
     setPerfilCargado(false)
   }
   return (
-    <div>
+    <>
       <button onClick={Back}>Volver</button>
-      <img src={perfil.imagen} alt={perfil.nombre} />
-      <h2>{perfil.nombre}</h2>
-      <p>{perfil.biografia}</p>
-      <p>{perfil.cantSeguidores} seguidores</p>
-      <p>{perfil.cantSeguidos} seguidos</p>
-    </div>
+
+      <div className="PerfilDetalle">
+        
+         <h2>{perfil.nombre}</h2>
+        <img className="pfp" src={Juan} alt={perfil.nombre} />
+        <h1 className="descripcion">Descripción</h1>
+        <p>{perfil.biografia}</p>
+        <p>{perfil.cantSeguidores} seguidores</p>
+        <p>{perfil.cantSeguidos} seguidos</p>
+      </div>
+    </>
+    
   )
 }
 

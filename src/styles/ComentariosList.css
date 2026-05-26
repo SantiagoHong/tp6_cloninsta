@@ -1,0 +1,12 @@
+.comentarios-list {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: rgb(43, 43, 43);
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+
+.comentarios-list::-webkit-scrollbar {
+  display: none;
+}

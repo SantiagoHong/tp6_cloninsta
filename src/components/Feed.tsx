@@ -2,8 +2,9 @@ import type { Publicacion, Usuario } from '../types'
 import PublicacionDetalle from './PublicacionDetalle'
 import Publicaciones from './Publicaciones'
 import PerfilDetalle from './PerfilDetalle'
+import '../styles/Feed.css'
 
-function Feed({ publicaciones, publicacion, setPublicacion, setPerfilCargado, perfilCargado, perfil, setLoading }: { publicaciones: Publicacion[], publicacion: Publicacion | null, setPublicacion: any, setPerfilCargado: any, perfilCargado: boolean, perfil: Usuario | null, setLoading: any }) {
+function Feed({ publicaciones, publicacion, setPublicacion, setPerfilCargado, perfilCargado, perfil }: { publicaciones: Publicacion[], publicacion: Publicacion | null, setPublicacion: any, setPerfilCargado: any, perfilCargado: boolean, perfil: Usuario | null }) {
 
   return (
     <div>
@@ -11,9 +12,11 @@ function Feed({ publicaciones, publicacion, setPublicacion, setPerfilCargado, pe
       
       {perfilCargado == false ? (
         publicacion == null ? (
-          publicaciones.map((pub) => (
-            <Publicaciones key={pub.id} publicacion={pub} setPublicacion={setPublicacion} />
-          ))
+          <div className="masonry-grid">
+            {publicaciones.map((pub) => (
+              <Publicaciones key={pub.id} publicacion={pub} setPublicacion={setPublicacion} />
+            ))}
+          </div>
         ) : (
           <PublicacionDetalle publicacion={publicacion} setPublicacion={setPublicacion} />
         )

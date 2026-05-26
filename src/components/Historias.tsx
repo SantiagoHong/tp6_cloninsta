@@ -1,4 +1,5 @@
 import type { Historia } from "../types"
+import '../styles/Historias.css'
 
 
 function Historias({ historia }: { historia: Historia }) {

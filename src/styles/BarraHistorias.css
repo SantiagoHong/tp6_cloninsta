@@ -1,0 +1,13 @@
+.barra-historias {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  margin-bottom: 30px;
+  flex-shrink: 0;
+}
+
+.barra-historias::-webkit-scrollbar {
+  display: none;
+}

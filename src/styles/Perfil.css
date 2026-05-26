@@ -1,0 +1,41 @@
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.perfil img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-pink);
+  padding: 3px;
+  margin-bottom: 15px;
+}
+
+.perfil h2 {
+  font-size: 1.2rem;
+  margin: 0 0 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.perfil h2::after {
+  content: '✔';
+  color: var(--accent-blue);
+  font-size: 0.9rem;
+  background: white;
+  border-radius: 50%;
+  width: 15px; height: 15px;
+  display: flex; justify-content: center; align-items: center;
+}
+
+.perfil p {
+  color: var(--text-muted);
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
