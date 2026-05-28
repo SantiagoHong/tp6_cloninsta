@@ -1,7 +1,7 @@
 {
     "nombre": "Juansito325",
     "imagen": "Juan.jpg",
-    "biografia": "Soy un apasionado de la tecnología y el desarrollo web. Me encanta aprender nuevas cosas y compartir mis conocimientos con los demás.",
+    "biografia": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Moseley, the librarian at St Bride Printing Library, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software including versions of Lorem Ipsum.",
     "cantPubl": 30,
     "cantSeguidores": 150,
     "cantSeguidos": 100,
@@ -76,7 +76,7 @@
             "nomUsuario": "pedro789"
             }
         ],
-        "fecha": "2024-06-01T12:00:00Z"
+        "fecha": "2024-06-01"
     },
     {
         "id": 2,
@@ -96,7 +96,7 @@
                     "nomUsuario": "pedro789"
                 }
             ],
-        "fecha": "2024-06-02T12:00:00Z"
+        "fecha": "2024-06-02"
     },
     {
         "id": 3,
@@ -116,7 +116,7 @@
                     "nomUsuario": "maria456"
                 }
             ],
-        "fecha": "2024-06-03T12:00:00Z"
+        "fecha": "2024-06-03"
     }
     ,
     {
@@ -137,7 +137,7 @@
                     "nomUsuario": "pedro789"
                 }
             ],
-        "fecha": "2024-06-04T12:00:00Z"
+        "fecha": "2024-06-04"
     },
     {
         "id": 5,
@@ -157,7 +157,7 @@
                     "nomUsuario": "pedro789"
                 }
             ],
-        "fecha": "2024-06-05T12:00:00Z"
+        "fecha": "2024-06-05"
     },
     {
         "id": 6,
@@ -177,7 +177,7 @@
                     "nomUsuario": "maria456"
                 }
             ],
-        "fecha": "2024-06-06T12:00:00Z"
+        "fecha": "2024-06-06"
     },
     {
         "id": 7,
@@ -197,7 +197,7 @@
                     "nomUsuario": "pedro789"
                 }
             ],
-        "fecha": "2024-06-07T12:00:00Z"
+        "fecha": "2024-06-07"
     },
     {
         "id": 8,
@@ -217,7 +217,7 @@
                     "nomUsuario": "pedro789"
                 }
             ],
-        "fecha": "2024-06-08T12:00:00Z"
+        "fecha": "2024-06-08"
     },
     {
         "id": 9,
@@ -237,7 +237,7 @@
                     "nomUsuario": "Miasculo86"
                 }
             ],
-        "fecha": "2024-06-09T12:00:00Z"
+        "fecha": "2024-06-09"
     },
     {
         "id": 10,
@@ -257,7 +257,7 @@
                     "nomUsuario": "pedro789"
                 }
             ],
-        "fecha": "2024-06-10T12:00:00Z"
+        "fecha": "2024-06-10"
     }
   ]
 }

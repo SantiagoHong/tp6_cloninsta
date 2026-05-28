@@ -77,11 +77,24 @@ Primero nos fijamos que componentes necesitabamos y los creamos. Después decidi
 - Qué componentes crearon.
 BarraHistorias, BarraLateral, Comentario, ComentarioList, Encabezado, Feed, Historias, Loader, Opciones, Perfil, PerfilDetalle, PublicacionDetalle y Publicaciones.
 - Qué responsabilidad tiene cada componente.
-tienen la responsabilidad de 
+tienen la responsabilidad de:
+BarraHistorias: se encarga de recorrer la listas de historias asociadas al perfil y los muestra.
+BarraLateral: se encarga de mostrar el perfil y la opciones del menu de la izquierda.
+Comentario: se encarga de mostrar los datos que contiene cada objeto comentario individualmente.
+ComentarioList: se encarga de recorrer la lista de comentarios asociadas a una publicacion y mostrarlas.
+Encabezado: se encarga de mostrar el navbar.
+Feed: se encarga de recorrer la lista de publicaciones asociadas al perfil y mostrarlas.
+Historias: se encarga de mostrar los datos que contiene cada historia individualmente.
+Loader: se encarga de mostrar un gif de cargando mientras las funciones asíncronas se completan (búsqueda en la api)
+Opciones: Muestra los botones de la barra lateral.
+Perfil: Muestra los datos del perfil sin detallar en la barraLateral.
+PerfilDetalle: se encarga de mostrar detalladamente los datos que contiene perfil.
+PublicacionDetalle: se encarga de mostrar detalladamente los datos que contiene UNA publicacion.
+Publicaciones: se encarga de mostrar cada card de publicacion en el feed, sin tantos detalles.
 - Por qué decidieron componentizar de esa manera.
 me gustó
 - Cómo se comunican los componentes mediante props.
-comunicandose
+reciben la funcion o variable en el return cuando se llama al componente y luego dentro de ese componente se le declara y se le da un tipo, haciendo así posible el uso de variables y funciones de otros componentes compartidos.
 - Qué hooks utilizaron y para qué.
 useState y UseEffect.
 - Qué diseño de Figma utilizaron como referencia.

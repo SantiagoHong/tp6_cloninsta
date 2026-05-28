@@ -15,8 +15,8 @@ function Perfil({ perfil, setPerfilCargado }: { perfil: Usuario | null, setPerfi
     <div className="perfil" onClick={() => detallarPerfil()}>
       <img src={Juan} alt={perfil.nombre} />
       <h2>{perfil.nombre}</h2>
-      <p>{perfil.cantSeguidores} seguidores</p>
-      <p>{perfil.cantSeguidos} seguidos</p>
+      <p><span className="destacado">{perfil.cantSeguidores}</span> seguidores</p>
+      <p><span className="destacado">{perfil.cantSeguidos}</span> seguidos</p>
 
     </div>
   )

@@ -15,13 +15,14 @@ function PerfilDetalle({ perfil, setPerfilCargado }: { perfil: Usuario | null, s
       <button onClick={Back}>Volver</button>
 
       <div className="PerfilDetalle">
-        
-         <h2>{perfil.nombre}</h2>
+        <h1 className="nombre">{perfil.nombre}</h1>
         <img className="pfp" src={Juan} alt={perfil.nombre} />
         <h1 className="descripcion">Descripción</h1>
-        <p>{perfil.biografia}</p>
-        <p>{perfil.cantSeguidores} seguidores</p>
-        <p>{perfil.cantSeguidos} seguidos</p>
+        <p className="biografia">{perfil.biografia}</p>
+        <div className="seguidores">
+          <p><span className="destacado">{perfil.cantSeguidores}</span> seguidores</p>
+          <p><span className="destacado">{perfil.cantSeguidos}</span> seguidos</p>
+        </div>
       </div>
     </>
     

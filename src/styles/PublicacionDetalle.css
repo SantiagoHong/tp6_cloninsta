@@ -7,6 +7,7 @@ button {
   cursor: pointer;
   margin-bottom: 20px;
   display: block;
+  transition: 0.3s;
 }
 
 button:hover {
@@ -14,12 +15,35 @@ button:hover {
 }
 
 .post {
+  float: left;
   max-width: 100%;
   border-radius: 15px;
   border: 3px solid var(--accent-pink);
+  margin-left: 10%;
 }
 
 .post-info {
-  margin-top: 15px;
-  border-bottom: 2px solid var(--text-main);
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-left: 5%;
+  border-radius: 10px;
+  padding: 2%;
+  border: 2px solid var(--text-muted);
+  background-color: var(--bg-search);
+}
+
+.post-info h2{
+  margin-top: 0%;
+}
+
+.PubDetalle{
+  float: left;
+  width: 100%;
+
+}
+
+.com{
+  display: block;
+  clear: both;
 }

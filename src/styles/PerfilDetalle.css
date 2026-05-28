@@ -2,6 +2,7 @@
   border: 3px solid grey;
   padding: 5%;
   border-radius: 10px;
+  margin-bottom: 2%;
 }
 
 .pfp{
@@ -9,11 +10,13 @@
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .descripcion {
-  text-decoration: underline;
+  border-top: 2px solid white;
+  padding-top: 10px;
+  font-size: 1.5rem;
 }
 
 button {
@@ -26,6 +29,37 @@ button {
   margin-bottom: 20px;
 }
 
-button:hover { background-color: var(--accent-pink); }
+button:hover {
+  background-color: var(--accent-pink);
+}
 
-img { max-width: 100%; border-radius: 15px; }
+img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.nombre{
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  margin-top: 0%;
+}
+
+.seguidores{
+  display: flex;
+  gap: 20px;
+}
+
+.destacado{
+  color: var(--accent-pink);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.biografia{
+  border: 2px solid var(--text-muted);
+  border-radius: 10px;
+  padding: 2%;
+  background-color: var(--bg-search);
+  margin: 0%;
+}

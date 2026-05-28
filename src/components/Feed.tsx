@@ -8,21 +8,26 @@ function Feed({ publicaciones, publicacion, setPublicacion, setPerfilCargado, pe
 
   return (
     <div>
-      <h1>TRENDING</h1>
       
       {perfilCargado == false ? (
         publicacion == null ? (
-          <div className="masonry-grid">
-            {publicaciones.map((pub) => (
-              <Publicaciones key={pub.id} publicacion={pub} setPublicacion={setPublicacion} />
-            ))}
-          </div>
+          <>
+            <h1>TRENDING</h1>
+            <div className="masonry-grid">
+              {publicaciones.map((pub) => (
+                <Publicaciones key={pub.id} publicacion={pub} setPublicacion={setPublicacion} />
+              ))}
+            </div>
+          </>
         ) : (
           <PublicacionDetalle publicacion={publicacion} setPublicacion={setPublicacion} />
         )
       ) : (
         perfil ? (
-          <PerfilDetalle perfil={perfil} setPerfilCargado={setPerfilCargado} />
+          <>
+            <h1>PERFIL</h1>
+            <PerfilDetalle perfil={perfil} setPerfilCargado={setPerfilCargado} />
+          </>
         ) : (
           <p>Cargando perfil...</p>
         )

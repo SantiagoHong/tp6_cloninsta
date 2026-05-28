@@ -7,18 +7,21 @@ function PublicacionesDetalle({ publicacion, setPublicacion }: { publicacion: Pu
   function Back() {
     setPublicacion(null)
   }
+
   return (
-    <div>
+    <div className="PubDetalle">
       <button onClick={Back}>Volver</button>
       <img className='post' src={publicacion.imagen} alt={publicacion.descripcion} />
       <div className='post-info'>
         <h2>{publicacion.nomUsuario}</h2>
         <p>{publicacion.descripcion}</p>
-        <p>{publicacion.cantLikes} likes</p>
+        <p><span className="destacado">{publicacion.cantLikes}</span> likes</p>
         <p>{publicacion.fecha}</p>
       </div>
-      <h3>Comentarios:</h3>
-      <ComentariosList comentarios={publicacion.comentarios} />
+      <div className="com">
+        <h3>Comentarios:</h3>
+        <ComentariosList comentarios={publicacion.comentarios} />
+      </div>
     </div>
   )
 }

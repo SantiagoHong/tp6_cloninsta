@@ -91,7 +91,7 @@ function App() {
           <Loader />
         ) : (
           <>
-            <BarraHistorias historias={historias} />
+            <BarraHistorias historias={historias} publicacion={publicacion} perfilCargado={perfilCargado} />
             <Feed publicaciones={publicaciones} publicacion={publicacion} setPublicacion={setPublicacion} setPerfilCargado={setPerfilCargado} perfilCargado={perfilCargado} perfil={perfil} />
           </>
         )}

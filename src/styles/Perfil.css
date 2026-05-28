@@ -39,3 +39,9 @@
   margin: 5px 0;
   font-size: 0.9rem;
 }
+
+.perfil .destacado{
+  color: var(--accent-pink);
+  font-weight: bold;
+  font-size: 1rem;
+}
